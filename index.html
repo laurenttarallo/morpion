@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>World of morpion</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <audio
+      id="audio"
+      src="./assets/image/01. Legends of Azeroth (Main Title).mp3"
+    ></audio>
+  </head>
+  <header>
+    <h2>
+      <img src="./assets/image/ecrit2.png" alt="" />
+    </h2>
+  </header>
+
+  <body onclick="playAudio()">
+    <div id="gameEnd">
+      <p class="white" id="endGameStatus"></p>
+      <input
+        type="submit"
+        value="Restart Game"
+        id="reloadGame"
+        onclick="reloadGame()"
+      />
+    </div>
+    <button class="changeMode" onclick="enablecpu()">
+      CPU MODE ACTIVATION
+    </button>
+    <div id="bloc">
+      <div class="board">
+        <div class="cell" data-cell onclick="playGame(this)"></div>
+        <div class="cell" data-cell onclick="playGame(this)"></div>
+        <div class="cell" data-cell onclick="playGame(this)"></div>
+        <div class="cell" data-cell onclick="playGame(this)"></div>
+        <div class="cell" data-cell onclick="playGame(this)"></div>
+        <div class="cell" data-cell onclick="playGame(this)"></div>
+        <div class="cell" data-cell onclick="playGame(this)"></div>
+        <div class="cell" data-cell onclick="playGame(this)"></div>
+        <div class="cell" data-cell onclick="playGame(this)"></div>
+      </div>
+      <iframe
+          width="500"
+          height="350"
+          src="https://www.youtube.com/embed/EpzADbkIyXw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="heuheu"
+        ></iframe>
+    </div>
+    
+    <h1 id="gameStatus"><b>LLLLeeeroooyyyyy JJJENNKINNSSS!!!!!!!</b></h1>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
